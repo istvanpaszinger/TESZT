@@ -1,10 +1,9 @@
 <?php
 
-$api_key = "YOUR_API_KEY";
-$lat = "LATITUDE";
-$lon = "LONGITUDE";
+$api_key = "0de4799ff4eab8891369637e70f9baad";
+$city = "London";
 
-$url = "https://api.openweathermap.org/data/2.5/onecall?lat=$lat&lon=$lon&exclude=minutely,daily,alerts&appid=$api_key";
+$url = "http://api.openweathermap.org/geo/1.0/direct?q=$city&limit=5&appid=$api_key";
 
 $cache = null;
 $last_request_time = null;
